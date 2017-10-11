@@ -1,0 +1,155 @@
+* {
+		margin: 0px;
+		padding: 0px;
+		font-size: 16px;
+}
+
+a {
+		text-decoration: none;
+}
+	
+body{
+    background: url('res/images/lol.jpg') repeat;
+	font-family: Century Gothic;
+	text-align: justify;
+	color: cyan;
+}	
+	}
+
+header {
+		width: 100%;
+		border-bottom: 1px solid #ccc;
+		height: 55px;
+		z-index: 999;
+		font-size: 1.75em;
+	}
+	
+header a {
+		font-size: 1.75em;
+		padding: 10px;
+		float: left;
+		color: cyan;
+		position: fixed;
+}
+
+#main p {
+		font-size: 1.25em;
+}
+
+header #burger_button {
+		z-index: 9999;
+		width: 50px;
+		padding: 10px;
+		margin: 5px 10px 5px 5px;
+		border-radius: 3px;
+		background-color: indigo;
+		float: right;
+		border: none;
+		display: none;
+}
+
+header #burger_button div {
+		height: 5px;
+		width: 100%;
+		background-color: white ;
+		border-radius: 3px;
+		margin-bottom: 6px;
+}
+
+#burger_button div:last-child{
+		margin-bottom: 0px;
+}
+
+#main_nav {
+	background: indigo;
+
+	height: 40px;
+	width: 100%;
+	position: fixed;
+	top: 55px;
+	transition: all .3s ease-in-out;
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-ms-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	z-index: 2;
+}
+
+#main_nav ul li {
+	display: inline;
+	float: right;
+	text-align: center;
+}
+
+#main_nav ul li a {
+	display: block;
+	width: 150px;
+	color: white;
+	padding: 10px;
+}
+
+#main_nav ul li a:hover{
+	color: pink;
+}
+
+#main {
+	width: 90%;
+	margin: 0px auto;
+	padding-top: 150px;
+}
+
+#main #Name,#main #section_one,#main #section_two{
+		height: 100%;
+		margin-bottom: 50px;
+		border: 10px solid indigo; 
+}
+#main #Name{
+	height: 100%;
+}
+
+#main #section_one{
+	height: 100%;
+}
+
+#main #section_two{
+	height: 100%;
+}
+
+#main header{
+	background-color: indigo;
+}
+
+footer{
+		background: #ccc;
+		text-align: center;
+	}
+	
+footer p {
+		padding: 25px;
+		color: #333;
+	}
+	
+@media screen and (max-width: 900px){
+		header #burger_button {
+			display: block;
+		}
+		#main_nav {
+			top: -250px;
+			background: indigo;
+			height: auto;
+			color: pink;
+		}
+		header a {
+			font-size: 1em;
+		}
+		#main_nav ul li {
+			text-align: center;
+			float: none;
+		}
+		#main_nav ul li a {
+			display: block;
+			width: 100%;
+			padding: 10px;
+			border: 1px solid white;
+		}
+	}
